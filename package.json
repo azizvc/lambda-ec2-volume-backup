@@ -1,0 +1,10 @@
+{
+    "name": "BackupEc2",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "lambda", "ec2", "aws", "backup"],
+    "author": "Aziz Vicentini",
+    "contributors": [],
+    "dependencies": {}, "scripts":{
+"start":"node index.js"}
+
+}
