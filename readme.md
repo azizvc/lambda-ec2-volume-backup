@@ -43,5 +43,5 @@ Em `Basic settings` configure o tempo de execução para 1 minuto pelo menos, se
 
 O Script está configurado e pronto para rodar.
  
-
+> Para ver uma implementação em PHP para usar no Linux com Cron [veja esse gist](https://gist.github.com/azizvc/66875896be7c11f789561f8bb03c34ef). 
 
