@@ -102,7 +102,7 @@ function removerVencidos(callback){
 
             //filtra os snapshots deixandos somente os vencidos
             var arrSnapshotsExcluir = data.Snapshots.filter(function(elem){
-                return ( Math.round(Math.abs(Date.now() - Date.parse(elem.StartTime)) / (1000 * 60 * 60 * 24)) > RETENCAO_DIAS );
+                return ( Math.round(Math.abs(Date.now() - Date.parse(elem.StartTime)) / (1000 * 60 * 60 * 24)) >= RETENCAO_DIAS );
             });
             
             //remove os vencidos
@@ -119,7 +119,7 @@ function removerVencidos(callback){
             Promise.all(snapshotsExcluidos).then(values => {
                 callback();
             }, reason => {
-                erros.push(reason);
+                //erros.push(reason);
                 callback();
             });
             
